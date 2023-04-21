@@ -1,9 +1,260 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>foobar</title>
-	</head>
-	<body>
-		<div>foobar</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set default font and background color */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Set header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f0f0f0;
+        }
+
+        /* Set home section styles */
+        #home {
+            text-align: center;
+            padding: 50px;
+            background-color: #63c4e2;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+			color: #29b6f6;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 24px;
+            color: #777;
+        }
+
+        /* Set about section styles */
+        #about {
+            padding: 50px;
+            background-color: #f06292;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        /* Set portfolio section styles */
+        #portfolio {
+            padding: 50px;
+            background-color: #29b6f6;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            flex: 0 0 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #90caf9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        li:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* Set contact section styles */
+        #contact {
+            padding: 50px;
+            background-color: #66bb6a;
+            color: #fff;
+}
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    p {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    /* Set footer styles */
+    footer {
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /* Add animations */
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Add responsive styles */
+    @media (max-width: 768px) {
+        header {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #home {
+            padding: 50px;
+        }
+
+        #about {
+            padding: 30px;
+        }
+
+        #portfolio {
+            padding: 30px;
+        }
+
+        #contact {
+            padding: 30px;
+        }
+
+        li {
+            flex: 0 0 100%;
+        }
+
+        footer {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <section id="home">
+        <h1>Samson Admasu</h1>
+        <p>Back-end Developer</p>
+    </section>
+    <section id="about">
+		<h2>About Me</h2>
+		<p>I am a skilled backend developer with expertise in Python and the Django framework. I have a strong background in server-side development and database management, and I am experienced in building robust and scalable web applications. I am well-versed in RESTful APIs, authentication, and database modeling using Django's ORM. I am constantly keeping up-to-date with the latest industry trends and best practices to deliver efficient and secure backend solutions for web projects.</p>
+	</section>
+	
+	<!-- 
+    <section id="portfolio">
+        <h2></h2>
+        <ul>
+            <li>
+                <img src="project1.jpg" alt="Project 1">
+                <h3>x</h3>
+                <p>.</p>
+            </li>
+            <li>
+                <img src="project2.jpg" alt="Project 2">
+                <h3>y</h3>
+                <p>.</p>
+            </li>
+           
+        </ul>
+    </section>
+-->
+<br><br><br><br><br>
+    <footer>
+        <p>&copy; [2023] Samson Admasu. All rights reserved.</p>
+    </footer>
+</body>
 </html>
